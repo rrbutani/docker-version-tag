@@ -19,8 +19,8 @@ This action will look for, in order (not case sensitive):
  - `ARG VERSION`
  - `ENV VERSION`
  - `LABEL version`
+ - `LABEL "version"`
 
 The first of these that are found will be used to tag the image. This action doesn't check to make sure that the version found is valid semver.
 
 If none of the above are found, the image isn't tagged and the action returns a neutral status code (78).
-
