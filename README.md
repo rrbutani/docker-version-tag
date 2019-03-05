@@ -15,11 +15,9 @@ action "version-tag" {
 }
 ```
 
-This action will look for, in order:
+This action will look for, in order (not case sensitive):
  - `ARG VERSION`
- - `ARG version`
  - `ENV VERSION`
- - `ENV version`
  - `LABEL version`
 
 The first of these that are found will be used to tag the image. This action doesn't check to make sure that the version found is valid semver.
