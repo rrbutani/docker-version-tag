@@ -1,4 +1,5 @@
 # GitHub Action for Docker Version Tag
+[![](https://images.microbadger.com/badges/image/rrbutani/docker-version-tag.svg)](https://cloud.docker.com/u/rrbutani/repository/docker/rrbutani/docker-version-tag)
 
 Quick and dirty GitHub Action that tags a specified image with it's `version` label, given a Dockerfile for that image.
 

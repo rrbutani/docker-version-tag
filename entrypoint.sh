@@ -2,8 +2,6 @@
 
 echo hi
 
-set -x
-
 IMAGE_NAME="${1}"
 IMAGE_TAG_NAME="${2}"
 DOCKERFILE="${3-Dockerfile}"
@@ -25,4 +23,5 @@ try "^LABEL version" ||
 try '^LABEL "version"' ||
 exit 78
 
+echo "${IMAGE_NAME} -> ${IMAGE_TAG_NAME}:${ver}"
 docker tag ${IMAGE_NAME} "${IMAGE_TAG_NAME}:${ver}" && exit 0
