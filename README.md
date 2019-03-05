@@ -6,7 +6,8 @@ The [Docker Tag action](https://github.com/actions/docker/tree/master/tag) is su
 
 ## Usage
 
-This action takes three arguments: the image to be tagged (must already be built), the image name (without tags), and the Dockerfile for the image. For example:
+This action takes two or three arguments: the image to be tagged (must already be built), the image name (without tags), and the Dockerfile for the image (if not provided, this defaults to Dockerfile).
+For example:
 
 ```
 action "version-tag" {

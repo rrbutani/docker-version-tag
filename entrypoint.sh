@@ -6,10 +6,10 @@ set -x
 
 IMAGE_NAME="${1}"
 IMAGE_TAG_NAME="${2}"
-DOCKERFILE="${3}"
+DOCKERFILE="${3-Dockerfile}"
 
-# Three args or bust:
-[ ${#} -ne 3 ] && exit 1
+# At least two args or bust:
+[ ${#} -lt 2 ] && exit 1
 
 # Let's get the version:
 ver=

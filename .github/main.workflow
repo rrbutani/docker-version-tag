@@ -23,7 +23,7 @@ action "Tag toolchain container" {
 action "Tag toolchain container with version" {
   uses = "./"
   needs = ["Build container"]
-  args = "docker-version-tag rrbutani/docker-version-tag Dockerfile"
+  args = "docker-version-tag rrbutani/docker-version-tag"
 }
 
 action "Push to Docker Hub" {

@@ -9,8 +9,8 @@ LABEL "repository"="https://github.com/rrbutani/docker-version-tag"
 LABEL "homepage"="https://github.com/rrbutani/docker-version-tag"
 LABEL "maintainer"="Rahul Butani <rrbutani@users.noreply.github.com>"
 
-LABEL "version"="0.1.0"
+LABEL "version"="0.2.0"
 
-COPY entrypoint.sh /opt/entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/opt/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
