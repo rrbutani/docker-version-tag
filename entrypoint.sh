@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo hi
-
 IMAGE_NAME="${1}"
 IMAGE_TAG_NAME="${2}"
 DOCKERFILE="${3-Dockerfile}"

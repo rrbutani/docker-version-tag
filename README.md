@@ -12,7 +12,7 @@ For example:
 
 ```
 action "version-tag" {
-    uses = "rrbutani/docker-version-tag@master"
+    uses = "docker://rrbutani/docker-version-tag"
     args = "base octocat/base env/Dockerfile"
 }
 ```
